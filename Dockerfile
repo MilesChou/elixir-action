@@ -1,4 +1,4 @@
-FROM elixir:latest
+FROM elixir:alpine
 
 LABEL repository="https://github.com/MilesChou/actions-elixir"
 LABEL homepage="https://github.com/MilesChou/actions-elixir"
