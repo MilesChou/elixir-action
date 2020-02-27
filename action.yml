@@ -1,0 +1,8 @@
+name: Elixir Action
+description: An action for running project with Elixir environment
+branding:
+  icon: terminal
+  color: orange
+runs:
+  using: docker
+  image: Dockerfile
