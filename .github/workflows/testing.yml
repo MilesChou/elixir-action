@@ -1,0 +1,19 @@
+name: Testing
+
+on: [push]
+
+jobs:
+  default:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Elixir action
+        uses: mileschou/elixir-action@master
+        with:
+          args: mix help
+  phoenix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Phoenix action
+        uses: mileschou/elixir-action/phoenix@master
+        with:
+          args: mix help

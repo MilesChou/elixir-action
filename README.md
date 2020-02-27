@@ -9,18 +9,14 @@ An action for running project with Elixir environment.
 
 ## Usage
    
-An example workflow to run Elixir test is as follows:
+Following is an example workflow to run Elixir test:
 
-```
-workflow "Elixir Test" {
-  on = "push"
-  resolves = ["Test"]
-}
-
-action "Test" {
-  uses = "MilesChou/elixir-action@master"
-  args = "mix test"
-}
+```yaml
+steps:
+  - name: Elixir action
+    uses: mileschou/elixir-action@master
+    with:
+      args: mix test
 ```
 
 ## Credits
